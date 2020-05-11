@@ -14,11 +14,10 @@ def Algo():
 
 def Determine():
     Dico={}
-    ListeBase = TousLesEleves
-    ListeTous=Random()
+    ListeBase= Algo()
     for i in ListeBase:
         b=0
-        for j in ListeTous:
+        for j in ListesEleves:
             for iti in j:
                 if iti==i:
                     b+=100-(j.index(iti)*10)
